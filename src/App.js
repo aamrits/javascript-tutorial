@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar/Navbar';
 import JSQuestionsBasic from './components/js-concepts/JSQuestionsBasic';
@@ -9,22 +9,42 @@ import DeepShallowCopy from './components/js-concepts/DeepShallowCopy';
 import NotFound from './components/NotFound';
 
 class App extends Component {
+  toggleBtn = () => {
+    document.querySelector('.wrapper').classList.toggle('active');
+    document.querySelector('.page-wrap').classList.toggle('inactive');
+  }
   render() { 
     return (
       <HashRouter>
+        <nav className="navbar navbar-expand navbar-light static-top">
+          <Link to="/" className="navbar-brand mr-auto text-uppercase">Javascript Tutorial</Link>
+          <div className="toggle-btn" onClick={ this.toggleBtn }>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav> 
+        
         <div className="container-fluid">
           <div className="row">
-            <div className="col-3 p-0">
-              <Navbar />
+            <div className="wrapper active">
+              <Navbar /> 
             </div>
-            <div className="col-9 page-wrap">
-              <Switch>
-                <Route exact path="/" component={ Home } />
-                <Route path="/js-questions-basic" component={ JSQuestionsBasic } />
-                <Route path="/js-questions-advanced" component={ JSQuestionsAdvanced } />
-                <Route path="/deep-shallow-copy" component={ DeepShallowCopy } />
-                <Route path="*" component={ NotFound } />
-              </Switch>
+            <div className="page-wrap">
+              <div className="container-fluid">
+              <div className="row">
+                <div className="col-12">
+                <Switch>
+                  <Route exact path="/" component={ Home } />
+                  <Route path="/js-questions-basic" component={ JSQuestionsBasic } />
+                  <Route path="/js-questions-advanced" component={ JSQuestionsAdvanced } />
+                  <Route path="/deep-shallow-copy" component={ DeepShallowCopy } />
+                  <Route path="*" component={ NotFound } />
+                </Switch>
+                </div>
+              </div>
+              </div>
+              
             </div>
           </div>
         </div>

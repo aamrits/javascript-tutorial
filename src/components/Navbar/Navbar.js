@@ -6,24 +6,26 @@ class Navbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <Link to='/' className="navbar-brand text-uppercase">JavaScript Tutorial</Link>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to='/js-questions-basic'>Javascript Questions: Basics</Link>
-            </li>
-            <li className="nav-item">
-              <Link to='/js-questions-advanced'>Javascript Questions: Advanced</Link>
-            </li>                    
-          </ul>
+        <div id="sidebar">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <Link to="/" className="navbar-brand">Interview Q&As</Link>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link to='/js-questions-basic'>Javascript Questions: Basics</Link>
+              </li>
+              <li className="nav-item">
+                <Link to='/js-questions-advanced'>Javascript Questions: Advanced</Link>
+              </li>                    
+            </ul>
 
-          <a className="navbar-brand" href="#">Concepts</a>
-          <ul className="navbar-nav">            
-            <li className="nav-item">
-              <Link to='/deep-shallow-copy'>Deep Copy & Shallow Copy</Link>
-            </li>
-          </ul>
-        </nav>
+            <Link to="/" className="navbar-brand">Concepts</Link>
+            <ul className="navbar-nav">            
+              <li className="nav-item">
+                <Link to='/deep-shallow-copy'>Deep Copy & Shallow Copy</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </React.Fragment>
     )
   }
