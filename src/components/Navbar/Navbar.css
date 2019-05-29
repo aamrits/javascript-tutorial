@@ -1,6 +1,7 @@
 #sidebar .navbar {
   flex-direction: column !important;
   align-items: flex-start;
+  background-color: #343A40!important;
 }
 
 #sidebar .navbar-nav {
