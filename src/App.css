@@ -9,7 +9,10 @@
   width: 100%;
 }
 .navbar {
-  background-color: #4CAF50!important;
+  background-color: #2F96F3!important;
+}
+.navbar-light .navbar-brand {
+  color: #fff !important;
 }
 .wrapper {
   width: 300px;
@@ -32,5 +35,5 @@
   height: 4px;
   display: block;
   margin: 5px 0;
-  background: #343A40;
+  background: #fff;
 }
