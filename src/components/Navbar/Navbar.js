@@ -7,7 +7,8 @@ class Navbar extends Component {
     return (
       <React.Fragment>
         <div id="sidebar">
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav className="navbar navbar-expand-lg navbar-dark bg-light">
+            <button className="close-btn" onClick={ this.props.toggleBtn }>Close</button>
             <Link to="/" className="navbar-brand">Interview Q&As</Link>
             <ul className="navbar-nav">
               <li className="nav-item">

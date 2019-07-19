@@ -10,14 +10,15 @@ import NotFound from './components/NotFound';
 
 class App extends Component {
   toggleBtn = () => {
+    // document.querySelector('.wrapper').classList.toggle('active');
+    // document.querySelector('.page-wrap').classList.toggle('inactive');
     document.querySelector('.wrapper').classList.toggle('active');
-    document.querySelector('.page-wrap').classList.toggle('inactive');
   }
   render() { 
     return (
       <HashRouter>
-        <nav className="navbar navbar-expand navbar-light static-top">
-          <Link to="/" className="navbar-brand mr-auto text-uppercase">Javascript Tutorial</Link>
+        <nav className="navbar navbar-light static-top">
+          <Link to="/" className="navbar-brand text-uppercase">Javascript Tutorial</Link>
           <div className="toggle-btn" onClick={ this.toggleBtn }>
             <span></span>
             <span></span>
@@ -28,7 +29,7 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="wrapper active">
-              <Navbar /> 
+              <Navbar toggleBtn= { this.toggleBtn } /> 
             </div>
             <div className="page-wrap">
               <div className="container-fluid">
