@@ -9,7 +9,7 @@ export default class JSQuestionsBasic extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Javascript Questions: Basic</h1>
+        <h1>Javascript Questions: Basics</h1>
 
         <p>We are using the StackBlitz Generator to show you a ready-made, simple application that you can examine and play with interactively. In actual development you will typically.</p>
 
