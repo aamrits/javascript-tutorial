@@ -19,7 +19,12 @@ code {
 }
 
 h1 {
-  font-size: 30px !important;
-  font-weight: 600 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
   margin: 20px 0 !important;
+}
+
+p {
+  margin: 14px 0 0;
+  line-height: 26px;
 }

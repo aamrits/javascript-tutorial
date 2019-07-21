@@ -6,14 +6,19 @@ export default class JSQuestionsBasic extends Component {
       <React.Fragment>
         <h1>Javascript Questions: Basic</h1>
 
-        <div className="card mb-3">
+        <p>We are using the StackBlitz Generator to show you a ready-made, simple application that you can examine and play with interactively. In actual development you will typically.</p>
+
+        <div className="alert-is-helpful">
+          <p>We are using the StackBlitz Generator to show you a ready-made, simple application that you can examine and play with interactively. In actual development you will typically.</p>
+        </div>
+
+        <div className="card callout-is-helpful">
           <div className="card-header">
-            <i className="fas fa-chart-area"></i>
-            Area Chart Example</div>
-          <div className="card-body">
-            
+            <p>Area Chart Example</p>
           </div>
-          <div className="card-footer small text-muted">Updated by Amrit</div>
+          <div className="card-body">
+            <p>We are using the StackBlitz Generator to show you a ready-made, simple application that you can examine and play with interactively. In actual development you will typically.</p>
+          </div>
         </div>
       </React.Fragment>
     )

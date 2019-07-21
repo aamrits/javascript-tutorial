@@ -10,14 +10,12 @@ import NotFound from './components/NotFound';
 
 class App extends Component {
   toggleBtn = () => {
-    // document.querySelector('.wrapper').classList.toggle('active');
-    // document.querySelector('.page-wrap').classList.toggle('inactive');
     document.querySelector('.wrapper').classList.toggle('active');
   }
   render() { 
     return (
       <HashRouter>
-        <nav className="navbar navbar-light static-top">
+        <nav className="navbar navbar-light static-top navbar-header-styles">
           <Link to="/" className="navbar-brand text-uppercase">Javascript Tutorial</Link>
           <div className="toggle-btn" onClick={ this.toggleBtn }>
             <span></span>
@@ -33,19 +31,23 @@ class App extends Component {
             </div>
             <div className="page-wrap">
               <div className="container-fluid">
-              <div className="row">
-                <div className="col-12">
-                <Switch>
-                  <Route exact path="/" component={ Home } />
-                  <Route path="/js-questions-basic" component={ JSQuestionsBasic } />
-                  <Route path="/js-questions-advanced" component={ JSQuestionsAdvanced } />
-                  <Route path="/deep-shallow-copy" component={ DeepShallowCopy } />
-                  <Route path="*" component={ NotFound } />
-                </Switch>
+                <div className="row">
+                  <div className="col-12">
+                  <Switch>
+                    <Route exact path="/" component={ Home } />
+                    <Route path="/js-questions-basic" component={ JSQuestionsBasic } />
+                    <Route path="/js-questions-advanced" component={ JSQuestionsAdvanced } />
+                    <Route path="/deep-shallow-copy" component={ DeepShallowCopy } />
+                    <Route path="*" component={ NotFound } />
+                  </Switch>
+                  </div>
+                </div>
+                <div className="row">
+                  <footer>
+                    <p>Copyright by Amrit. 2019</p>
+                  </footer>
                 </div>
               </div>
-              </div>
-              
             </div>
           </div>
         </div>
