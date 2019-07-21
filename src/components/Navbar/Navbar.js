@@ -24,6 +24,9 @@ class Navbar extends Component {
               <li className="nav-item">
                 <Link to='/deep-shallow-copy'>Deep Copy & Shallow Copy</Link>
               </li>
+              <li className="nav-item">
+                <Link to='/example'>Example</Link>
+              </li>
             </ul>
           </nav>
           <footer>

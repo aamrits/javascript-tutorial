@@ -61,7 +61,7 @@
 .callout-is-helpful .card-body {
   background: rgba(25,118,210,.05);
 }
-.callout-is-helpful .card-header p {
+.callout-is-helpful .card-header {
   margin: 0;
   color: #fff;
   text-transform: uppercase;
@@ -101,4 +101,6 @@ footer p {
     width: calc(100% - 500px);
   }
 }
+
+
 

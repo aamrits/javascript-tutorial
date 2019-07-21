@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import Prism from "prismjs";
 import Gist from 'super-react-gist';
 
 export default class DeepShallowCopy extends Component {
+  componentDidMount() {
+    Prism.highlightAll();
+  }
   render() {
     return (
       <React.Fragment>
@@ -20,7 +24,7 @@ export default class DeepShallowCopy extends Component {
         </pre>
 
         <div className="alert-is-helpful">
-          <p>Shallow Copy: It makes a copy of the reference to <strong>‘obj1’</strong> into <strong>‘obj2’</strong>. Think about it as a copy of <strong>obj1’</strong>s Address. So, the addresses of <strong>‘obj1’</strong> and <strong>‘obj2’</strong> will be the same i.e. they will be pointing to the same memory location.</p>
+          <p>Shallow Copy makes a copy of the reference to <strong>‘obj1’</strong> into <strong>‘obj2’</strong>. Think about it as a copy of <strong>obj1’</strong>s Address. So, the addresses of <strong>‘obj1’</strong> and <strong>‘obj2’</strong> will be the same i.e. they will be pointing to the same memory location.</p>
         </div>
 
         <pre>
@@ -37,7 +41,7 @@ export default class DeepShallowCopy extends Component {
         <p>Here, the value of <strong>‘x’</strong> changes in both <strong>‘obj1’</strong> and <strong>‘obj2’</strong>.</p>
 
         <div className="alert-is-helpful">
-          <p>Deep copy: It makes a copy of all the members of <strong>‘obj1’</strong>, allocates different memory location for <strong>‘obj2’</strong> and then assigns the copied members to <strong>‘obj2’</strong> to achieve deep copy. In this way, if <strong>‘obj1’</strong> vanishes <strong>‘obj2’</strong> is still valid in the memory.</p>
+          <p>Deep copy makes a copy of all the members of <strong>‘obj1’</strong>, allocates different memory location for <strong>‘obj2’</strong> and then assigns the copied members to <strong>‘obj2’</strong> to achieve deep copy. In this way, if <strong>‘obj1’</strong> vanishes <strong>‘obj2’</strong> is still valid in the memory.</p>
         </div>
 
         <p>Method 1: We can use <strong>Object.assign()</strong> for deep copying.</p>
