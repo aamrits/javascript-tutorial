@@ -15,7 +15,7 @@ class App extends Component {
   render() { 
     return (
       <HashRouter>
-        <nav className="navbar navbar-light static-top navbar-header-styles">
+        <nav className="navbar navbar-light fixed-top navbar-header-styles">
           <Link to="/" className="navbar-brand text-uppercase">Javascript Tutorial</Link>
           <div className="toggle-btn" onClick={ this.toggleBtn }>
             <span></span>
@@ -41,11 +41,6 @@ class App extends Component {
                     <Route path="*" component={ NotFound } />
                   </Switch>
                   </div>
-                </div>
-                <div className="row">
-                  <footer>
-                    <p>Copyright by Amrit. 2019</p>
-                  </footer>
                 </div>
               </div>
             </div>

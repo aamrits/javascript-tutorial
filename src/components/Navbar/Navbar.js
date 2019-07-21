@@ -8,7 +8,7 @@ class Navbar extends Component {
       <React.Fragment>
         <div id="sidebar">
           <nav className="navbar navbar-expand-lg navbar-dark bg-light">
-            <button className="close-btn" onClick={ this.props.toggleBtn }><i class="fas fa-times"></i></button>
+            <button className="close-btn" onClick={ this.props.toggleBtn }><i className="fas fa-times"></i></button>
             <Link to="/" className="navbar-brand">Interview Q&As</Link>
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -26,6 +26,9 @@ class Navbar extends Component {
               </li>
             </ul>
           </nav>
+          <footer>
+            <p>Copyright by Amrit. 2019</p>
+          </footer>
         </div>
       </React.Fragment>
     )
