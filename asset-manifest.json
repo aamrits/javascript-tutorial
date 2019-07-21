@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/javascript-tutorial/static/css/main.55741a43.chunk.css",
-    "main.js": "/javascript-tutorial/static/js/main.15018e48.chunk.js",
-    "main.js.map": "/javascript-tutorial/static/js/main.15018e48.chunk.js.map",
+    "main.css": "/javascript-tutorial/static/css/main.37b1d298.chunk.css",
+    "main.js": "/javascript-tutorial/static/js/main.85b786ad.chunk.js",
+    "main.js.map": "/javascript-tutorial/static/js/main.85b786ad.chunk.js.map",
     "runtime~main.js": "/javascript-tutorial/static/js/runtime~main.93a9789f.js",
     "runtime~main.js.map": "/javascript-tutorial/static/js/runtime~main.93a9789f.js.map",
     "static/css/2.eb5aa5c4.chunk.css": "/javascript-tutorial/static/css/2.eb5aa5c4.chunk.css",
-    "static/js/2.80996573.chunk.js": "/javascript-tutorial/static/js/2.80996573.chunk.js",
-    "static/js/2.80996573.chunk.js.map": "/javascript-tutorial/static/js/2.80996573.chunk.js.map",
+    "static/js/2.fba0e15e.chunk.js": "/javascript-tutorial/static/js/2.fba0e15e.chunk.js",
+    "static/js/2.fba0e15e.chunk.js.map": "/javascript-tutorial/static/js/2.fba0e15e.chunk.js.map",
     "index.html": "/javascript-tutorial/index.html",
-    "precache-manifest.20c6122eaa48a7035c582ab517a0a5cd.js": "/javascript-tutorial/precache-manifest.20c6122eaa48a7035c582ab517a0a5cd.js",
+    "precache-manifest.42a597e8113c48a90982e143b49a952d.js": "/javascript-tutorial/precache-manifest.42a597e8113c48a90982e143b49a952d.js",
     "service-worker.js": "/javascript-tutorial/service-worker.js",
     "static/css/2.eb5aa5c4.chunk.css.map": "/javascript-tutorial/static/css/2.eb5aa5c4.chunk.css.map",
-    "static/css/main.55741a43.chunk.css.map": "/javascript-tutorial/static/css/main.55741a43.chunk.css.map"
+    "static/css/main.37b1d298.chunk.css.map": "/javascript-tutorial/static/css/main.37b1d298.chunk.css.map"
   }
 }
