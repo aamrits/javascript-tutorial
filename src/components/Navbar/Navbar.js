@@ -27,7 +27,7 @@ class Navbar extends Component {
             </ul>
           </nav>
           <footer>
-            <p>Copyright by Amrit. 2019</p>
+            <p>Copyright by Amrit &copy;2019</p>
           </footer>
         </div>
       </React.Fragment>

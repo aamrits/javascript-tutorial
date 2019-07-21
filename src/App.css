@@ -51,6 +51,10 @@
 .callout-is-helpful {
   margin: 24px 0;
 }
+.alert-is-helpful p, 
+.callout-is-helpful p {
+  margin: 0;
+}
 .callout-is-helpful .card-header {
   background: #2F96F3;
 }
