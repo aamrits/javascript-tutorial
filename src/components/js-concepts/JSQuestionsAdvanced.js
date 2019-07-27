@@ -1,20 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Prism from "prismjs";
+import Gist from 'super-react-gist';
 
 export default class JSQuestionsAdvanced extends Component {
+  componentDidMount() {
+    Prism.highlightAll();
+  }
   render() {
     return (
       <React.Fragment>
         <h1>Javascript Questions: Advanced</h1>
 
-        <div className="card mb-3">
-          <div className="card-header">
-            <i className="fas fa-chart-area"></i>
-            Area Chart Example</div>
-          <div className="card-body">
-            
-          </div>
-          <div className="card-footer small text-muted">Updated by Amrit</div>
-        </div>
+        <p>Some of the advanced Javascript questions (like ES6, OOPs related) are listed below.</p>
+
+        <Gist url='https://gist.github.com/aamrits/bc95009f01b59ba2ac789be856888737' />
       </React.Fragment>
     )
   }

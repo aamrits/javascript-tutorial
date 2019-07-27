@@ -25,6 +25,9 @@ class Navbar extends Component {
                 <Link to='/deep-shallow-copy'>Deep Copy & Shallow Copy</Link>
               </li>
               <li className="nav-item">
+                <Link to='/looping'>Looping in Objects and Array</Link>
+              </li>
+              <li className="nav-item">
                 <Link to='/example'>Example</Link>
               </li>
             </ul>

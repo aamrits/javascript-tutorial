@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Prism from "prismjs";
-import { Accordion, Card } from 'react-bootstrap';
+import Gist from 'super-react-gist';
 
 export default class JSQuestionsBasic extends Component {
   componentDidMount() {
@@ -11,20 +11,9 @@ export default class JSQuestionsBasic extends Component {
       <React.Fragment>
         <h1>Javascript Questions: Basics</h1>
 
-        <p>We are using the StackBlitz Generator to show you a ready-made, simple application that you can examine and play with interactively. In actual development you will typically.</p>
+        <p>Some of the basic Javascript questions are listed below.</p>
 
-        <Accordion defaultActiveKey="0">
-          <Card className="card callout-is-helpful">
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              Click me!
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body className="card-body">
-                Hello! I'm the body
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        </Accordion>
+        <Gist url='https://gist.github.com/aamrits/bed4773f9589b6884a126c88891e2911' />
       </React.Fragment>
     )
   }

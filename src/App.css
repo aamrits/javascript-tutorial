@@ -82,6 +82,12 @@ footer {
 footer p {
   margin: 0;
 }
+.accordion>.card .card-header {
+  text-transform: initial;
+}
+img {
+  
+}
 @media screen and (max-width: 991px) {
   .toggle-btn {
     display: block;

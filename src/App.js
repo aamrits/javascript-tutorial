@@ -8,6 +8,7 @@ import JSQuestionsAdvanced from './components/js-concepts/JSQuestionsAdvanced';
 import DeepShallowCopy from './components/js-concepts/DeepShallowCopy';
 import NotFound from './components/NotFound';
 import Example from './components/js-concepts/Example';
+import Looping from './components/js-concepts/Looping';
 
 class App extends Component {
   toggleBtn = () => {
@@ -40,6 +41,7 @@ class App extends Component {
                     <Route path="/js-questions-advanced" component={ JSQuestionsAdvanced } />
                     <Route path="/deep-shallow-copy" component={ DeepShallowCopy } />
                     <Route path="/example" component={ Example } />
+                    <Route path="/looping" component={ Looping } />
                     <Route path="*" component={ NotFound } />
                   </Switch>
                   </div>
